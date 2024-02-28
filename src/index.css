@@ -80,15 +80,22 @@ ul {
 
 
 .pigTile {
-  display: inline;
+  /* display: inline;
   background-repeat: no-repeat;
   background-position: center 90%;
   float: left;
+  outline: #3B0B0B dotted thick;
   margin: 2%;
   padding: 1%;
-  outline: #3B0B0B dotted thick;
   transition: 0.75s;
-  opacity: 1;
+  opacity: 1; */
+  
+  display: inline;
+  border: 1px solid #747373;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  transition: 0.75s;
 }
 
 .minBackgroundSneak {
@@ -149,4 +156,15 @@ ul {
   to {
     transform: rotate(360deg);
   }
+}
+
+.pig-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 16px;
+
+}
+
+img {
+  max-width: 100%;
 }
